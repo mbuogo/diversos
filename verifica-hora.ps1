@@ -11,13 +11,13 @@ if ((Test-Path $localLog) -eq "True")
 del $localLog
 }
 
-$servidores="sun101.unimed-ners.net sun102.unimed-ners.net sun27.unimed-ners.net sun32.unimed-ners.net sun31.unimed-ners.net sun28.unimed-ners.net sun40.unimed-ners.net sun142.unimed-ners.net sun177.unimed-ners.net mssql-c2.unimed-ners.net sun21.unimed-ners.net sun22.unimed-ners.net sun23.unimed-ners.net sun24.unimed-ners.net sun47.unimed-ners.net sun87.unimed-ners.net sun88.unimed-ners.net sun84.unimed-ners.net sun85.unimed-ners.net" -split ' '
+$servidores="servidor1.net,servidor2.net" -split ' '
  
 
 foreach ($servidor in $servidores)
 {
     
-    if (($servidor -eq "sun31.unimed-ners.net") -or ($servidor -eq "sun32.unimed-ners.net"))
+    if (($servidor -eq "ad.nett") -or ($servidor -eq "ad2.net"))
     {
 
         $dataServidor = Invoke-Command -ComputerName $servidor -ScriptBlock {get-date}
