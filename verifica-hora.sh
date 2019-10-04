@@ -4,7 +4,7 @@ rm -rf /opt/suporte/scripts/scom/monitorias/logs/VerificaHora.log
 
 DataServidor=$(date | awk '{print substr($4,1,5)}' | sed 's/.//3')
 
-DataNTP=$(ntpdate -q unimed-ners.net | sed -n '3p' | awk '{print substr($3,1,5)}' | sed 's/.//3')
+DataNTP=$(ntpdate -q dominio.net | sed -n '3p' | awk '{print substr($3,1,5)}' | sed 's/.//3')
 
 ServidorAdiantado=1
 
