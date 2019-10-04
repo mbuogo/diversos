@@ -4,7 +4,7 @@
 $localLog="C:\Scripts\scom\logs\VerificaHora.log"
 
 $NTPExterno="a.st1.ntp.br"
-$NTPInterno="unimed-ners.net"
+$NTPInterno="ad1.net"
 
 if ((Test-Path $localLog) -eq "True")
 {
