@@ -17,7 +17,7 @@ $servidores="servidor1.net,servidor2.net" -split ' '
 foreach ($servidor in $servidores)
 {
     
-    if (($servidor -eq "ad.nett") -or ($servidor -eq "ad2.net"))
+    if (($servidor -eq "ad1.net") -or ($servidor -eq "ad2.net"))
     {
 
         $dataServidor = Invoke-Command -ComputerName $servidor -ScriptBlock {get-date}
